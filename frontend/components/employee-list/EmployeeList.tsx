@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from 'react';
 
 import EmployeeCard from '../employee-card/EmployeeCard';
-import './EmployeeList.css';
 import Employee from '../../generated/org/vaadin/marcus/backend/Employee';
 import { findAll } from '../../generated/EmployeeEndpoint';
+
+import './EmployeeList.css';
 
 const EmployeeList = () => {
   const [employees, setEmployees] = useState<Employee[]>([]);
