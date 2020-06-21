@@ -10,3 +10,5 @@ This is a demo of using React views to connect to a Vaadin TS backend.
 ## Running the app
 
 `mvn spring-boot:run`
+
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/marcushellberg/vaadin-react-typescript)
