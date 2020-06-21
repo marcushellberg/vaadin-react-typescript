@@ -1,12 +1,17 @@
-import React from 'react';
-import Employee from '../../generated/org/vaadin/marcus/backend/Employee';
+import React, { useState, useEffect } from 'react';
+
 import EmployeeCard from '../employee-card/EmployeeCard';
 import './EmployeeList.css';
+import Employee from '../../generated/org/vaadin/marcus/backend/Employee';
+import { findAll } from '../../generated/EmployeeEndpoint';
 
-type Props = {
-  employees: Employee[];
-};
-const EmployeeList: React.FC<Props> = ({ employees }) => {
+const EmployeeList = () => {
+  const [employees, setEmployees] = useState<Employee[]>([]);
+
+  useEffect(() => {
+    findAll().then(setEmployees);
+  }, []);
+
   return (
     <div className="EmployeeList">
       <h2>Employees</h2>
