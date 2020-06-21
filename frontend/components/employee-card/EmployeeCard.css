@@ -1,0 +1,10 @@
+.EmployeeCard {
+  display: inline-block;
+  text-align: center;
+}
+
+.EmployeeCard .name {
+  font-weight: bold;
+  font-size: 1.2em;
+  margin-top: 12px;
+}

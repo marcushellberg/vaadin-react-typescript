@@ -2,26 +2,22 @@
   "compilerOptions": {
     "sourceMap": true,
     "inlineSources": true,
+    "module": "esNext",
     "target": "es2017",
+    "moduleResolution": "node",
+    "strict": true,
+    "experimentalDecorators": true,
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
-    "strict": true,
     "forceConsistentCasingInFileNames": true,
-    "module": "esnext",
-    "moduleResolution": "node",
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "react"
   },
-  "include": [
-    "frontend/**/*.ts",
-    "frontend/index.js",
-    "types.d.ts",
-    "frontend/index.ts"
-  ],
+  "include": ["frontend/**/*.ts", "types.d.ts", "frontend/index.ts"],
   "exclude": []
 }
